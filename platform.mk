@@ -36,8 +36,6 @@ TARGET_KEYMASTER_V4 := true
 # RIL
 TARGET_PER_MGR_ENABLED := true
 
-TARGET_VIBRATOR_V1_2 := true
-
 TARGET_PD_SERVICE_ENABLED := true
 
 # Wi-Fi definitions for Qualcomm solution
