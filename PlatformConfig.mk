@@ -54,6 +54,10 @@ BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_PRODUCTIMAGE_JOURNAL_SIZE := 0
 BOARD_PRODUCTIMAGE_EXTFS_INODE_COUNT := 4096
 
+# Build system_ext image
+TARGET_COPY_OUT_SYSTEM_EXT := system_ext
+BOARD_SYSTEM_EXTIMAGE_FILE_SYSTEM_TYPE := ext4
+
 # This platform has a metadata partition: declare this
 # to create a mount point for it
 BOARD_USES_METADATA_PARTITION := true
