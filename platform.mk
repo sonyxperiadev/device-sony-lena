@@ -79,6 +79,7 @@ AUDIO_FEATURE_SONY_CIRRUS := true
 # DSP
 TARGET_NEEDS_AUDIOPD := true
 TARGET_NEEDS_SDSP_SENSORS_PDR := true
+TARGET_HAS_CDSP := true
 
 # Dynamic Partitions: Enable DP
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -97,6 +98,9 @@ NUM_FRAMEBUFFER_SURFACE_BUFFERS := 2
 
 # Lights HAL: Backlight
 TARGET_USES_SDE := true
+
+# Hvdcp_opti
+TARGET_NEEDS_HVDCP_OPTI := true
 
 # Force building a boot image.
 # This needs to be set explicitly since Android R
