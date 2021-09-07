@@ -79,9 +79,6 @@ AUDIO_FEATURE_SONY_CIRRUS := true
 # Dynamic Partitions: Enable DP
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
-# SSC Sensors
-TARGET_USES_SSC := true
-
 # Secure Processor
 TARGET_HAS_SPU := true
 
