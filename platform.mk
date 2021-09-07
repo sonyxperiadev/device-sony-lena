@@ -228,6 +228,10 @@ PRODUCT_PACKAGES += \
     init.qcom.cdspstart.sh \
     cdsprpcd.rc
 
+# HVDCP init
+PRODUCT_PACKAGES += \
+    hvdcp_opti.rc
+
 # Audio init
 PRODUCT_PACKAGES += \
     audiopd.rc \
