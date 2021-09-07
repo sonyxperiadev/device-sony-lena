@@ -79,9 +79,6 @@ AUDIO_FEATURE_SONY_CIRRUS := true
 # Dynamic Partitions: Enable DP
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
-# Secure Processor
-TARGET_HAS_SPU := true
-
 # Display
 TARGET_HAS_HDR_DISPLAY := true
 TARGET_RECOVERY_PIXEL_FORMAT := BGRA_8888
