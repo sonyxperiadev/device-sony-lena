@@ -77,7 +77,6 @@ AUDIO_FEATURE_ENABLED_USB_BURST_MODE := true
 AUDIO_FEATURE_SONY_CIRRUS := true
 
 # DSP
-TARGET_NEEDS_AUDIOPD := true
 TARGET_NEEDS_SDSP_SENSORS_PDR := true
 
 # Dynamic Partitions: Enable DP
@@ -225,6 +224,10 @@ PRODUCT_PACKAGES += \
     init.lena \
     init.lena.pwr \
     ueventd
+
+# Audio init
+PRODUCT_PACKAGES += \
+    audiopd.rc \
 
 # Audio
 PRODUCT_PACKAGES += \
