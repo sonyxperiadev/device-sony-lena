@@ -223,6 +223,11 @@ PRODUCT_PACKAGES += \
     init.lena.pwr \
     ueventd
 
+# CDSP init
+PRODUCT_PACKAGES += \
+    init.qcom.cdspstart.sh \
+    cdsprpcd.rc
+
 # Audio init
 PRODUCT_PACKAGES += \
     audiopd.rc \
