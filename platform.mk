@@ -385,10 +385,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.use_color_management=true \
     ro.surface_flinger.wcg_composition_dataspace=143261696
 
-# External modem
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.mdm_helper.fail_action=cold_reset
-
 # Gatekeeper
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.gatekeeper.disable_spu=true
