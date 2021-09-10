@@ -74,7 +74,6 @@ AUDIO_FEATURE_ENABLED_HDMI_EDID := true
 AUDIO_FEATURE_ENABLED_HDMI_PASSTHROUGH := true
 AUDIO_FEATURE_ENABLED_DISPLAY_PORT := true
 AUDIO_FEATURE_ENABLED_USB_BURST_MODE := true
-AUDIO_FEATURE_SONY_CIRRUS := true
 
 # Dynamic Partitions: Enable DP
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -393,10 +392,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.set_touch_timer_ms=200 \
     ro.surface_flinger.use_color_management=true \
     ro.surface_flinger.wcg_composition_dataspace=143261696
-
-# External modem
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.mdm_helper.fail_action=cold_reset
 
 # Gatekeeper
 PRODUCT_PROPERTY_OVERRIDES += \
