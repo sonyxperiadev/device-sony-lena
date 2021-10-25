@@ -33,7 +33,7 @@ static inline const char* getBTDefaultName()
     property_get("ro.boot.hardware", device, "");
 
     if (!strcmp("pdx213", device)) {
-        return "Xperia 10III";
+        return "Xperia 10 III";
     }
 
     return "Xperia";
