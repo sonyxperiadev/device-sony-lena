@@ -114,14 +114,6 @@
         <device name="SND_DEVICE_IN_UNPROCESSED_HEADSET_MIC" acdb_id="147"/>
         <device name="SND_DEVICE_IN_HANDSET_GENERIC_QMIC" acdb_id="191"/>
         <device name="SND_DEVICE_OUT_VOICE_TTY_HCO_HANDSET" acdb_id="7" />
-        <device name="SND_DEVICE_OUT_SONY_VOICE_TTY_HCO_SPEAKER" acdb_id="15" />
-        <device name="SND_DEVICE_IN_SONY_MONO_MIC" acdb_id="11" />
-        <device name="SND_DEVICE_IN_SONY_HANDSET_MIC_ASR" acdb_id="528" />
-        <device name="SND_DEVICE_IN_SONY_HEADSET_MIC_ASR" acdb_id="529" />
-        <device name="SND_DEVICE_IN_SONY_CAMCORDER" acdb_id="544" />
-        <device name="SND_DEVICE_IN_SONY_HANDSET_SECONDARY_MIC" acdb_id="35" />
-        <device name="SND_DEVICE_IN_SONY_STEREO_MIC" acdb_id="35" />
-        <device name="SND_DEVICE_IN_SONY_GAMEENHANCER_HEADSET_MIC" acdb_id="589" />
     </acdb_ids>
     <backend_names>
         <device name="SND_DEVICE_OUT_HEADPHONES" backend="headphones" interface="RX_CDC_DMA_RX_0"/>
@@ -271,19 +263,6 @@
         <device name="SND_DEVICE_OUT_SPEAKER_AND_DISPLAY_PORT" backend="speaker-and-display-port" interface="PRI_MI2S_RX-and-DISPLAY_PORT"/>
         <device name="SND_DEVICE_OUT_SPEAKER_AND_DISPLAY_PORT1" backend="speaker-and-display-port1" interface="PRI_MI2S_RX-and-DISPLAY_PORT1"/>
         <device name="SND_DEVICE_OUT_SPEAKER_AND_USB_HEADSET" backend="speaker-and-usb-headphones" interface="PRI_MI2S_RX-and-USB_AUDIO_RX" />
-        <!-- SOMC out devices -->
-        <device name="SND_DEVICE_OUT_SONY_VOICE_TTY_HCO_SPEAKER" interface="PRI_MI2S_RX" />
-        <!-- SOMC in devices -->
-        <device name="SND_DEVICE_IN_SONY_MONO_MIC" interface="TX_CDC_DMA_TX_3" />
-        <device name="SND_DEVICE_IN_SONY_HANDSET_MIC_ASR" interface="TX_CDC_DMA_TX_3" />
-        <device name="SND_DEVICE_IN_SONY_HEADSET_MIC_ASR" backend="headset-mic" interface="TX_CDC_DMA_TX_4" />
-        <device name="SND_DEVICE_IN_SONY_CAMCORDER" interface="TX_CDC_DMA_TX_3" />
-        <device name="SND_DEVICE_IN_SONY_HANDSET_SECONDARY_MIC" interface="TX_CDC_DMA_TX_3" />
-        <device name="SND_DEVICE_IN_SONY_STEREO_MIC" interface="TX_CDC_DMA_TX_3" />
-        <device name="SND_DEVICE_IN_SONY_GAMEENHANCER_HEADSET_MIC" backend="headset-mic" interface="TX_CDC_DMA_TX_4" />
-        <device name="SND_DEVICE_IN_SONY_VOIP_DMIC" interface="TX_CDC_DMA_TX_3"/>
-        <device name="SND_DEVICE_IN_SONY_VOIP_HEADSET_MIC" interface="TX_CDC_DMA_TX_3"/>
-        <device name="SND_DEVICE_IN_SONY_VOIP_SPEAKER_MIC" interface="TX_CDC_DMA_TX_3"/>
     </backend_names>
     <!-- below values are for ref purpose to OEM, doesn't contain actual hardware info on MTP -->
     <microphone_characteristics>
@@ -441,30 +420,6 @@
                             channel_mapping="AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED"/>
                         <mic_info mic_device_id="builtin_mic_3"
                             channel_mapping="AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED"/>
-                    </snd_dev>
-                    <snd_dev in_snd_device="SND_DEVICE_IN_SONY_MONO_MIC">
-                        <mic_info mic_device_id="builtin_mic_1" channel_mapping="AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED" />
-                    </snd_dev>
-                    <snd_dev in_snd_device="SND_DEVICE_IN_SONY_HANDSET_MIC_ASR">
-                        <mic_info mic_device_id="builtin_mic_1" channel_mapping="AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED" />
-                    </snd_dev>
-                    <snd_dev in_snd_device="SND_DEVICE_IN_SONY_CAMCORDER">
-                        <mic_info mic_device_id="builtin_mic_1" channel_mapping="AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED" />
-                        <mic_info mic_device_id="builtin_mic_2" channel_mapping="AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED" />
-                    </snd_dev>
-                    <snd_dev in_snd_device="SND_DEVICE_IN_SONY_HANDSET_SECONDARY_MIC">
-                        <mic_info mic_device_id="builtin_mic_2" channel_mapping="AUDIO_MICROPHONE_CHANNEL_MAPPING_UNUSED AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED" />
-                    </snd_dev>
-                    <snd_dev in_snd_device="SND_DEVICE_IN_SONY_STEREO_MIC">
-                        <mic_info mic_device_id="builtin_mic_1" channel_mapping="AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED" />
-                        <mic_info mic_device_id="builtin_mic_2" channel_mapping="AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED" />
-                    </snd_dev>
-                    <snd_dev in_snd_device="SND_DEVICE_IN_SONY_VOIP_DMIC">
-                        <mic_info mic_device_id="builtin_mic_1" channel_mapping="AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED"/>
-                        <mic_info mic_device_id="builtin_mic_3" channel_mapping="AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED"/>
-                    </snd_dev>
-                    <snd_dev in_snd_device="SND_DEVICE_IN_SONY_VOIP_SPEAKER_MIC">
-                        <mic_info mic_device_id="builtin_mic_3" channel_mapping="AUDIO_MICROPHONE_CHANNEL_MAPPING_UNUSED AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED"/>
                     </snd_dev>
             </input_snd_device_mic_mapping>
         </input_snd_device>
