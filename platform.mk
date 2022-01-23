@@ -111,9 +111,7 @@ PRODUCT_PACKAGES += \
     update_engine \
     update_engine_client \
     update_engine_sideload \
-    update_verifier \
-    bootctrl.sm6350 \
-    bootctrl.sm6350.recovery
+    update_verifier
 
 AB_OTA_PARTITIONS += \
     boot \
