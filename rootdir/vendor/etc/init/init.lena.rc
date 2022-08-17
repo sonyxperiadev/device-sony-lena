@@ -69,3 +69,9 @@ on property:sys.boot_completed=1
     write /sys/block/sdc/queue/iostats 1
     write /sys/block/dm-0/queue/read_ahead_kb 512
     write /sys/block/dm-1/queue/read_ahead_kb 512
+
+    # LMK tuning
+    write /sys/module/lowmemorykiller/parameters/enable_lmk 1
+    write /sys/module/lowmemorykiller/parameters/minfree "15360,19200,23040,26880,34415,43737"
+    write /sys/module/lowmemorykiller/parameters/vmpressure_file_min 105984
+    write /sys/module/lowmemorykiller/parameters/oom_reaper 1
