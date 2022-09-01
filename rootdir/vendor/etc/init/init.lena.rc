@@ -72,6 +72,7 @@ on property:sys.boot_completed=1
 
     # LMK tuning
     write /sys/module/lowmemorykiller/parameters/enable_lmk 1
-    write /sys/module/lowmemorykiller/parameters/minfree "15360,19200,23040,26880,34415,43737"
+    write /sys/module/lowmemorykiller/parameters/minfree "167160,190200,213240,236280,356490"
+    write /sys/module/lowmemorykiller/parameters/adj "0,58,147,529,1000"
     write /sys/module/lowmemorykiller/parameters/vmpressure_file_min 105984
     write /sys/module/lowmemorykiller/parameters/oom_reaper 1
