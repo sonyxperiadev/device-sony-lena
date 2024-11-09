@@ -105,7 +105,8 @@ PRODUCT_BUILD_BOOT_IMAGE := true
 
 # A/B support
 AB_OTA_UPDATER := true
-PRODUCT_SHIPPING_API_LEVEL := 26
+# API level 30 - Android 11
+PRODUCT_SHIPPING_API_LEVEL := 30
 
 # A/B OTA dexopt package
 PRODUCT_PACKAGES += \
