@@ -62,7 +62,6 @@ $(call soong_config_set,qcom_wifi,board_wlan_chip,wcn6740)
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
 TARGET_USE_QTI_BT_STACK := true
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(PLATFORM_COMMON_PATH)/bluetooth
 WCNSS_FILTER_USES_SIBS := true
 
 # NFC
