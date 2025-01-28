@@ -267,14 +267,7 @@ PRODUCT_PACKAGES += \
 # hardware.ssc.so links against display mappers, of which
 # the interface libraries are explicitly included here:
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@2.1-service.multihal \
-    vendor.qti.hardware.display.mapper@1.1.vendor \
-    vendor.qti.hardware.display.mapper@3.0.vendor
-
-# Sensors
-PRODUCT_PACKAGES += \
-    sns_reg_config \
-    hals.conf
+    vendor.qti.hardware.display.mapper@1.1.vendor
 
 # SSC Common config
 PRODUCT_PACKAGES += \
