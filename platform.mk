@@ -214,7 +214,7 @@ PRODUCT_COPY_FILES += \
 
 # Platform specific init
 PRODUCT_PACKAGES += \
-    tad.rc \
+    tad_legacy.rc \
     init.lena \
     init.lena.pwr \
     ueventd
